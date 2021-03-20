@@ -1,5 +1,4 @@
 ##
---
 name: 'TYPO3 CI TypoScript Lint'
 description: 'GitHub Action that lints your TypoScript code.'
 branding:
