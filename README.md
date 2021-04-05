@@ -15,14 +15,3 @@ uses: typo3-continuous-integration/typo3-ci-typoscript-lint@v1
 with:
   files: './Configuration/Typoscript'
 ```
-
-
-## Outputs
-
-### `time`
-
-The time we greeted you.
-
-## Example usage
-
-uses: actions/hello-world-docker-action@v1
