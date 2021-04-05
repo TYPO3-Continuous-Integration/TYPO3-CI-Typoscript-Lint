@@ -1,5 +1,9 @@
 #!/bin/sh -l
 
+set -e
+
+input_paths="$1"
+
 ### Function Header ###########################################################
 Header() {
   ##########
@@ -21,7 +25,7 @@ Lint() {
   echo "---------------------------------------------"
   echo "-- Running lint... ---"
   echo "---------------------------------------------"
-  typoscript-lint -c /TsLint.yml --ansi -n --fail-on-warnings -vvv $1
+  sh -c "typoscript-lint -c /TsLint.yml --ansi -n --fail-on-warnings -vvv $input_paths"
 }
 
 #### Function Footer ###########################################################
