@@ -21,7 +21,7 @@ Lint() {
   echo "---------------------------------------------"
   echo "-- Running lint... ---"
   echo "---------------------------------------------"
-  typoscript-lint -c /TsLint.yml --ansi -n --fail-on-warnings -vvv ./Configuration/TypoScript
+  typoscript-lint -c /TsLint.yml --ansi -n --fail-on-warnings -vvv $1
 }
 
 #### Function Footer ###########################################################

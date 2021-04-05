@@ -4,6 +4,13 @@ description: 'GitHub Action that lints your TypoScript code.'
 branding:
   icon: check
   color: orange
+inputs:
+  files:
+    description: 'Files you want to lint.'
+    required: false
+    default: './Configuration/TypoScript'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.files }}
