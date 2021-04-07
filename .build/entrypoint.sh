@@ -3,6 +3,7 @@
 set -e
 
 input_paths="$1"
+config_file="$2"
 
 ### Function Header ###########################################################
 Header() {
@@ -25,7 +26,7 @@ Lint() {
   echo "---------------------------------------------"
   echo "-- Running lint... ---"
   echo "---------------------------------------------"
-  sh -c "typoscript-lint -c /TsLint.yml --ansi -n --fail-on-warnings -vvv $input_paths"
+  sh -c "typoscript-lint -c $config_file --ansi -n --fail-on-warnings -vvv $input_paths"
 }
 
 #### Function Footer ###########################################################

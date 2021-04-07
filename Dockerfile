@@ -3,7 +3,7 @@ FROM bash:5
 FROM php:7.4-alpine
 
 COPY .build/entrypoint.sh /entrypoint.sh
-COPY .configuration/TsLint.yml /TsLint.yml
+COPY .configuration/TsLint.yml /.configuration/TsLint.yml
 
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 COPY --from=bash /usr/local/bin/bash /usr/bin/bash
