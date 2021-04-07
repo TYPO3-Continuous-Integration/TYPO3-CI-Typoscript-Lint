@@ -10,7 +10,7 @@ Files you want to lint. Default `./Configuration/TypoScript`.
 
 ### `ConfigFile`
 
-Files you want to lint. Default `/.configuration/TsLint.ym`.
+Files you want to lint. Default `/.configuration/TsLint.yml`.
 
 ## Example usage
 
