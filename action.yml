@@ -12,7 +12,7 @@ inputs:
   config_file:
     description: 'Path to custom configuration'
     required: false
-    default: '/.configuration/TsLint.Yml'
+    default: '/.configuration/TsLint.yml'
 runs:
   using: 'docker'
   image: 'Dockerfile'
