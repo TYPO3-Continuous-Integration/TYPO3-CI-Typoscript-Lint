@@ -9,8 +9,13 @@ inputs:
     description: 'Files you want to lint.'
     required: false
     default: './Configuration/TypoScript'
+  config_file:
+    description: 'Path to custom configuration'
+    required: false
+    default: '/.configuration/TsLint.yml'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.files }}
+    - ${{ inputs.config_file }}
