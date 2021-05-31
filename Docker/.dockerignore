@@ -1,6 +1,6 @@
 # ignore all files by default
 *
 # include required files with an exception
-!.build/entrypoint.sh
-!.configuration/TsLint.yml
-!README.md
+!Build/entrypoint.sh
+!Configuratiton/TsLint.yml
+!../README.md
